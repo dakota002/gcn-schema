@@ -1,0 +1,18 @@
+{
+  "$id": "https://github.com/nasa-gcn/gcn-schema/blob/main/core-schema/gcn.notices.core.Distance.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "title": "gcn.notices.core.Distance",
+  "description": "Luminosity Distance",
+  "properties": {
+    "luminosity_distance": {
+      "type": "number",
+      "description": "Luminosity distance [Mpc]"
+    },
+    "luminosity_distance_error": {
+      "type": "number",
+      "description": "Luminosity distance uncertainty [Mpc, 1-sigma]"
+    }
+  },
+  "required": ["luminosity_distance", "luminosity_distance_error"]
+}

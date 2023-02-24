@@ -1,0 +1,18 @@
+{
+  "$id": "https://raw.githubusercontent.com/Vidushi-GitHub/gcn-avro-schema/validate/core-schema/gcn.notices.core.HardnessRatio.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "title": "gcn.notices.core.HardnessRatio",
+  "description": "Hardness Ratio parameterization",
+  "properties": {
+    "hardness_ratio": {
+      "type": "number",
+      "description": "ratio of flux between high and low energy bands"
+    },
+    "energy_range": {
+      "$ref": "Vidushi-GitHub/gcn-avro-schema/validate/core-schema/gcn.notices.core.EnergyRange.schema.json",
+      "description": "Energy range [keV] used in soft and hard band of hardness ratio"
+    }
+  },
+  "required": ["hardness_ratio", "energy_range"]
+}
