@@ -1,0 +1,9 @@
+{
+  "$id": "https://gcn.nasa.gov/schema/gcn/notices/core/InheritanceTest.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "allOf": [
+    { "$ref": "/schema/gcn/notices/core/BaseNotice.schema.json" },
+    { "$ref": "/schema/gcn/notices/core/AlertInfo.schema.json" }
+  ]
+}

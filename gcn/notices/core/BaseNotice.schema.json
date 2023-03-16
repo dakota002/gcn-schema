@@ -1,0 +1,13 @@
+{
+  "$id": "https://gcn.nasa.gov/schema/gcn/notices/core/BaseNotice.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "title": "Base Notice",
+  "description": "Core properties to be shared by all notice types",
+  "properties": {
+    "notice_id": {
+      "type": "string",
+      "description": "A unique ID which is set by the GCN Kafka Producer class"
+    }
+  }
+}

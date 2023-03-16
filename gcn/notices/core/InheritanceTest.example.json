@@ -1,0 +1,7 @@
+{
+  "$schema": "https://gcn.nasa.gov/schema/gcn/notices/core/InheritanceTest.schema.json",
+  "notice_id": "234567890_4567_6789_876543",
+  "alert_datetime": "Time",
+  "alert_tense": "current",
+  "alert_type": "initial"
+}
