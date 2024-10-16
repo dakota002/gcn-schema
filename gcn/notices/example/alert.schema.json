@@ -1,0 +1,9 @@
+{
+  "$id": "https://gcn.nasa.gov/schema/main/gcn/notices/example/alert.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Example Schema",
+  "description": "A simple example schema that can be used as boilerplate for new missions. As a new producer, you should copy this file and the `alert.example.json` file into a new folder for your mission, update the `$id` field to reflect this new file path, and update the title to name it appropriately for your mission. You may then expand on the `properties` and `allOf` fields to further develop your new schema. You must also update the `$schema` field in the `alert.example.json` file to match the newly updated `$id` field in the schema file so that the validator knows what to validate against.",
+  "type": "object",
+  "allOf": [{ "$ref": "../core/Base.schema.json" }],
+  "properties": {}
+}
