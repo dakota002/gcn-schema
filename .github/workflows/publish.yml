@@ -1,4 +1,4 @@
-name: Main
+name: Publish Package
 
 on:
   push:
@@ -19,9 +19,7 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
-          node-version: 20
+          node-version: 24
           registry-url: 'https://registry.npmjs.org'
       - run: npm ci
-      - run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - uses: nasa-gcn/npm-publish@e6ebe2fff4d8aa76399680311781b730e823aaf2 # v0.1.0
